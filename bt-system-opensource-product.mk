@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += Bluetooth
 
 ifneq ($(TARGET_BOARD_TYPE),auto)
 # Set supported Bluetooth profiles to enabled
-PRODUCT_PRODUCT_PROPERTIES += \
+PRODUCT_VENDOR_PROPERTIES += \
     bluetooth.profile.a2dp.source.enabled=true \
     bluetooth.profile.avrcp.target.enabled=true \
     bluetooth.profile.avrcp.controller.enabled=true \
