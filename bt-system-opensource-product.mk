@@ -12,7 +12,7 @@ endif #TARGET_FWK_SUPPORTS_FULL_VALUEADDS
 
 #BT
 ifeq ($(BOARD_HAVE_BLUETOOTH_QCOM),true)
-PRODUCT_PACKAGES += Bluetooth
+#PRODUCT_PACKAGES += Bluetooth
 
 ifneq ($(TARGET_BOARD_TYPE),auto)
 # Set supported Bluetooth profiles to enabled
@@ -46,10 +46,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.bluetooth.leaudio.notify.idle.during.call=true \
     persist.vendor.bluetooth.haltest=true
 
-ifneq ($(TARGET_HAS_LOW_RAM), true)
-PRODUCT_PACKAGES += Xpan
-PRODUCT_PACKAGES += privapp-permission-xpan.xml
-endif #TARGET_HAS_LOW_RAM
+#ifneq ($(TARGET_HAS_LOW_RAM), true)
+#PRODUCT_PACKAGES += Xpan
+#PRODUCT_PACKAGES += privapp-permission-xpan.xml
+#endif #TARGET_HAS_LOW_RAM
 
 endif #TARGET_BOARD_TYPE
 
